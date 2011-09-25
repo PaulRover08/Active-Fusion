@@ -1,11 +1,13 @@
 <?php if(count($this->newsitems)): ?>
     <?php foreach($this->newsitems as $newsitem): ?>
-        <div class="newsitem">
-            <p class="newsdate"><?=date('jS F Y', strtotime($newsitem['newsdate']))?></p>
-            <p><span><?=$newsitem['title']?></span>
-            <?=$newsitem['preview']?><br />
-            <a href="/news/view/article/<?=$newsitem['news_id']?>">more</a></p>
-        </div>
+        <div id="latest_news_list">
+        			<div id="latest_news_thumb">
+            		<a href="/news/view/article/<?=$newsitem['news_id']?>"><img height="90px" src="<?=$newsitem['news_image']?>" alt="<?=$newsitem['title']?>" /></a>
+            		</div>
+          			<h3 style="margin-bottom: 3px;"><a href="/news/view/article/<?=$newsitem['news_id']?>"><?=$newsitem['title']?></a></h3>
+           			<p style="margin-bottom: 0px;"><?=$newsitem['preview']?><a href="/news/view/article/<?=$newsitem['news_id']?>"> More…</a></p>
+           			<div id="clear"></div>
+        </div>       			
     <?php endforeach; ?>
 <?php else: ?>
     <p>No news items found</p>

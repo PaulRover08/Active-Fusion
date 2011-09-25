@@ -47,7 +47,7 @@ class IndexController extends Weblynx_Controllers_Base {
             $latestposts = $this->getLatestBlogPosts(2);
             $this->view->latestposts = $latestposts;
             
-            $newsitems = $this->getLatestNewsItems(2);
+            $newsitems = $this->getLatestNewsItems(3);
             $this->view->newsitems = $newsitems;
         }
         // End of custom function calls set by permalink

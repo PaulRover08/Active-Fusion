@@ -1,4 +1,4 @@
-<h2><?=$this->newsitem['title']?><span><?=date('jS F Y', strtotime($this->newsitem['newsdate']))?></span></h2>
+<h2><?=$this->newsitem['title']?></h2>
 <?php if(!empty($this->newsitem['news_image'])): ?>
 <div id="newsimage">
     <?php $imageinfo = getimagesize($this->location . '/' . $this->newsitem['news_image']); ?>

@@ -132,6 +132,33 @@ html, body, p, td {
 	padding: 20px;
 }
 
+#text_wrapper_sub {
+	background: url("../images/TEXT_BG.jpg") repeat-x top center;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 920px;
+	padding: 20px;
+	margin: 20px 10px 20px 10px;
+}
+
+#latest_news_wrapper {
+	margin-bottom: 15px;
+}
+
+#latest_news_list {
+	margin-bottom: 15px;
+}
+
+#latest_news_list h3 a {
+	color: #bd272f;
+	text-decoration: none;
+}
+
+#latest_news_list p a {
+	color: #bd272f;
+	text-decoration: none;
+}
+
 #latest_news {
 	width: 350px;
 }
@@ -139,6 +166,26 @@ html, body, p, td {
 #latest_news h2 a {
 	color: #2b3e8a;
 	text-decoration: none;
+}
+
+#latest_news h4 a {
+	color: #bd272f;
+	text-decoration: none;
+}
+
+#latest_news p a {
+	color: #bd272f;
+	text-decoration: none;
+}
+
+#latest_news_thumb {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	float: left;
+	margin-right: 10px;
 }
 
 #content_right {
@@ -189,10 +236,12 @@ html, body, p, td {
 
 #footer_wrapper {
 	clear: both;
-    width: 980px;
-	padding: 0px;
-	margin: 0px;
+    width: 940px;
+	padding: 10px 20px 5px;
+	margin: 0px 0px 10px 0px;
     background-color: #ffffff;
+    -moz-border-radius: 20px;
+	border-radius: 20px;
 }
 
 /*CONTACT FORM STYLES*/

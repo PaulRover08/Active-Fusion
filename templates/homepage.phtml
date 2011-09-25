@@ -107,10 +107,14 @@ $(function() {
     				<?php if(count($this->newsitems)): ?>
                    
         			<?php foreach($this->newsitems as $newsitem): ?>
-            		<p style="display: none;"><?=date('jS F Y', strtotime($newsitem['newsdate']))?></p>
-          			<h4 style="margin-bottom: 3px;"><?=$newsitem['title']?></h4>
-           			<p style="margin-bottom: 0px;"><?=$newsitem['preview']?></p>
-            		<h5 style="margin-top: -5px;"><a href="/news/view/article/<?=$newsitem['news_id']?>">read full article here...</a></h5>
+        			<div id="latest_news_wrapper">
+        			<div id="latest_news_thumb">
+            		<a href="/news/view/article/<?=$newsitem['news_id']?>"><img height="90px" src="<?=$newsitem['news_image']?>" alt="<?=$newsitem['title']?>" /></a>
+            		</div>
+          			<h4 style="margin-bottom: 3px;"><a href="/news/view/article/<?=$newsitem['news_id']?>"><?=$newsitem['title']?></a></h4>
+           			<p style="margin-bottom: 0px;"><?=$newsitem['preview']?><a href="/news/view/article/<?=$newsitem['news_id']?>"> More…</a></p>
+           			<div id="clear"></div>
+           			</div>
             		<?php endforeach; ?>
                     
         			<?php else: ?>
@@ -145,12 +149,12 @@ $(function() {
     		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum orci nec nibh eleifend non tempor enim volutpat. Vestibulum ornare eleifend tellus ut tempor. Suspendisse vel lorem mollis dui ege.</p>
     		</div>
     		<div class="services_left_image">
-    		<a href="/view/competitions"><img src="/images/SERVICES_FOR_SCHOOLS.png" alt="for schools" /></a>
+    		<a href="/view/competitions"><img src="/images/SERVICES_COMMUNITY.png" alt="for schools" /></a>
     		</div>
     	</div>
     	<div class="services">
     		<div class="services_right_image">
-    		<a href="/view/training"><img src="/images/SERVICES_SPORT.png" alt="sport and health" /></a>
+    		<a href="/view/training"><img src="/images/SERVICES_TRAINING.png" alt="sport and health" /></a>
     		</div>
     		<div class="services_right">
     		<h1><a href="/view/training">Training and Qualifications</a></h1>
@@ -161,7 +165,8 @@ $(function() {
 </div>
 
 <div id="footer_wrapper">
-	Footer
+	<p>This is where the address will go along with any other links that need to appear in the footer<br />
+Website produced by <a href="http://www.sugarcaneweb.co.uk">www.sugarcaneweb.co.uk</a></p>
 </div>
 
 </div>
