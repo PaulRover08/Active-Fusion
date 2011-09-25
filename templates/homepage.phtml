@@ -29,15 +29,6 @@
     Header
 </div>
 
-<div id="header_images">
-	<?php $i = 1; foreach($this->header_images as $image): ?>
-	<?php if($image['url']): ?><a href="<?=$image['url']?>" target="_blank"><?php endif; ?>
-    <div class="imagewrapper<?=($i == count($this->header_images)) ? ' last' : ''?>"><img width="176" height="176" src="/images/header-images/<?=$image['image']?>" alt="" />
-    </div>
-    <?php if($image['url']): ?></a><?php endif; ?>
-    <?php $i++; endforeach; ?>
-</div>
-
 <div id="nav_wrapper">
     <ul id="mainnav">
         <?=$this->nav?>
@@ -82,25 +73,6 @@
         <?php endif; ?>
 	</div>
 </div>
-
-<div id="blog_home">
-	<h1>latest from our blog...</h1>
-	<?php if(count($this->blogposts)): ?>
-		<?php foreach($this->blogposts as $blogposts): ?>
-	<div id="blogListImage">
-		<a href="/blog/view/<?=$blogposts['post_id']?>"><img style="margin-bottom: 10px;" src="/images/blogimages/<?=$blogposts['post_image']?>" width="210" alt="<?=$blogposts['post_title']?>" /></a>
-	</div>
-	<div id="blogListContent">
-		<h4><a href="/blog/view/<?=$blogposts['post_id']?>"><?=$blogposts['post_title']?></a></h4>
-		<p><?=$blogposts['post_summary']?></p>
-		<h5><a href="/blog/view/<?=$blogposts['post_id']?>">read full article here...</a></h5>
-	</div>
-	<div id="clear"></div>
-	<?php endforeach; ?>
-	<?php else: ?>
-        <p>No blog posts found</p>
-    <?php endif; ?>
-</div><!-- end id="blog_home" -->
 
 <div id="footer_wrapper">
 	Footer
