@@ -15,7 +15,7 @@ html, body, p, td {
 	line-height: 1.6em;
 }
 
-p { line-height: 1.6em;
+p { line-height: 1.4em;
     margin-bottom: 10px;
 }
 
@@ -36,11 +36,11 @@ img {
 a {outline: none;}
 a img {outline: none; border:0;}
 
-h1 {font-family: Arial, Helvetica, sans-serif; font-size: 28px; color: #b19f79; font-weight: normal; margin-bottom: 8px; line-height: 1.6em; }
-h2 {font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #b19f79; font-weight: normal; margin-bottom: 8px; line-height: 1.6em;}
-h3{font-family: Arial, Helvetica, sans-serif; font-size: 16px ; color: #b19f79; font-weight: normal; margin-bottom: 8px; line-height: 1.6em;}
-h4 {font-family: Arial, Helvetica, sans-serif; font-size: 14px ; color: #b19f79; font-weight: normal; margin-bottom: 8px; line-height: 1.6em; }
-h5 {font-family: Arial, Helvetica, sans-serif; font-size: 12px ; color: #b19f79; font-weight: bold; margin-bottom: 8px; line-height: 1.6em; }
+h1 {font-family: 'Loved by the King', cursive; font-size: 42px; color: #bd272f; font-weight: normal; margin-bottom: 8px; line-height: 1.2em; }
+h2 {font-family: 'Loved by the King', cursive; font-size: 34px; color: #bd272f; font-weight: normal; margin-bottom: 8px; line-height: 1.2em;}
+h3{font-family: 'Loved by the King', cursive; font-size: 26px ; color: #bd272f; font-weight: normal; margin-bottom: 8px; line-height: 1.2em;}
+h4 {font-family: 'Loved by the King', cursive; font-size: 20px ; color: #bd272f; font-weight: normal; margin-bottom: 8px; line-height: 1.2em; }
+h5 {font-family: 'Loved by the King', cursive; font-size: 14px ; color: #bd272f; font-weight: bold; margin-bottom: 8px; line-height: 1.2em; }
 a:link {color: #40423d; font-weight: normal; text-decoration: none;}
 a:visited {color: #40423d; text-decoration: none;}
 a:hover {color: #40423d; text-decoration: underline;}

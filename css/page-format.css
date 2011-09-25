@@ -6,7 +6,7 @@
 }
 
 html, body {
-	background-color: #ffffff;
+	background: url("../images/BODY_BG.jpg") repeat-x top center;
 	margin: 0px;
 	padding: 0px;
 }
@@ -29,9 +29,83 @@ html, body, p, td {
 
 #header_wrapper {
 	width: 980px;
-	height: 100px;
+	height: 448px;
 	margin: 0px;
 	padding: 0px;
+}
+
+#headerImage {
+    position:relative;
+    height:448px;
+}
+
+#headerImage IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#headerImage IMG.active {
+    z-index:10;
+}
+
+#headerImage IMG.last-active {
+    z-index:9;
+}
+
+#header_content {
+	width: 980px;
+	height: 448px;
+	position: relative;
+	margin: -448px 0px 0px 0px;
+	padding: 0px;
+	z-index: 11;
+}
+
+#header_top {
+	height: 206px;
+}
+
+#header_top_left {
+	float: left;
+	width: 727px;
+	padding: 20px 20px 20px 25px;
+}
+
+#header_top_right {
+	float: left;
+	width: 208px;
+}
+
+#free_sports {
+	background: url("../images/CALLOUT_BG.png") no-repeat top center;
+	margin: 0px;
+	padding: 15px 10px 25px 30px;
+	width: 168px;
+	height: 103px;
+}
+
+#free_sports h2 a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+#social_icons {
+	background: url("../images/SOCIAL_BG.png") no-repeat top center;
+	margin: 0px 0px 0px 60px;
+	padding: 5px 0px 0px 5px;
+	height: 58px;
+	width: 115px;
+}
+
+#header_bottom {
+	height: 242px;
+}
+
+#book {
+	margin: 100px 0px 0px 20px;
 }
 
 /* CONTENT */
@@ -45,18 +119,70 @@ html, body, p, td {
 
 #content_left {
     float: left;
-    width: 200px;
+    width: 390px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    background-color: #545454;
+    margin: 20px 10px 20px 10px;
+}
+
+#text_wrapper {
+	background: url("../images/TEXT_BG.jpg") repeat-x top center;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 350px;
+	padding: 20px;
+}
+
+#latest_news {
+	width: 350px;
+}
+
+#latest_news h2 a {
+	color: #2b3e8a;
+	text-decoration: none;
 }
 
 #content_right {
     float: left;
-    width: 780px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    background-color: #636363;
+    width: 540px;
+    padding: 0px 10px 0px 10px;
+    margin: 20px 10px 20px 0px;
+}
+
+.services {
+	width: 540px;
+	height: 180px;	
+}
+
+.services h1 a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 3px 3px 3px #000;
+}
+
+.services p {
+	color: #fff;
+}
+
+.services_left {
+	width: 380px;
+	float: left;
+	margin-top: 15px;
+}
+
+.services_left_image {
+	width: 160px;
+	float: left;
+}
+
+.services_right {
+	width: 380px;
+	float: right;
+	margin-top: 15px;
+}
+
+.services_right_image {
+	width: 160px;
+	float: left;
 }
 
 /* FOOTER */
@@ -66,7 +192,7 @@ html, body, p, td {
     width: 980px;
 	padding: 0px;
 	margin: 0px;
-    background-color: #979797;
+    background-color: #ffffff;
 }
 
 /*CONTACT FORM STYLES*/

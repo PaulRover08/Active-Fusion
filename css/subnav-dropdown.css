@@ -1,10 +1,13 @@
 #topnav .subnav {
-    margin: 33px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 56px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     list-style: none;
-    background: #231f20;
+    background: url("../images/NAV_BG.jpg") repeat top center;
     display: none;
-    z-index: 4;
+    z-index: 12;
+    -moz-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
+	overflow: hidden;
 }
 #topnav .subnav li {
     float: none;
@@ -12,12 +15,12 @@
 }
 #topnav .subnav li a {
     border: none;
-    padding: 6px 10px 6px 10px;
+    padding: 3px 10px 0px 10px;
     display: block;
 }
 
-#topnav li:hover a, #topnav li:focus a { background-color: #231f20; color: #ec008c; }
+#topnav li:hover a, #topnav li:focus a { color: #bd272f; }
 
 #topnav li:hover .subnav, #topnav li:focus .subnav { position:absolute; display:block;}
-#topnav li:hover .subnav a, #topnav li:focus .subnav a { background-color: #231f20; color: #FFFFFF; }
-#topnav .subnav li a:hover { color: #db2d32; }
+#topnav li:hover .subnav a, #topnav li:focus .subnav a { color: #FFFFFF; }
+#topnav .subnav li a:hover { color: #bd272f; }

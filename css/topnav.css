@@ -1,26 +1,26 @@
 #nav_wrapper {
     position: relative;
 	width: 980px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-family: 'Loved by the King', cursive;
+	font-size: 28px;
 	padding: 0px;
 	margin: 0px;
-	height: 30px;
+	height: 56px;
 }
 
 #nav_wrapper ul#mainnav {
-	height: 30px;
+	height: 56px;
     width: 980px;
 	list-style: none;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
-    background-color: #4d4d4d;
 }
 ul#mainnav li {
-    height: 30px;
+    height: 53px;
 	float: left; 
 	padding: 0px;
-	margin: 0px;
+	margin-top: 3px;
+	margin-right: 2px;
 	color: #ffffff;
 	font-weight: normal;
 }
@@ -28,22 +28,34 @@ ul#mainnav li {
 ul#mainnav a {
 	color: #ffffff;
 	float: left;
-	padding: 5px 8px 5px 8px;
+	padding: 18px 12px 5px 12px;
 	text-decoration: none;
 	font-weight: normal;
 }
 
 ul#mainnav li:hover {
-	color: #000;
+	color: #fff;
+	-moz-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	background: url("../images/NAV_BG.jpg") repeat-x top center;
 }
 ul#mainnav li:hover a {
-	color: #000;
+	color: #fff;
+	-moz-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	background: url("../images/NAV_BG.jpg") repeat-x top center;
 }
 
 ul#mainnav li.current {
-	color: #000;
+	color: #fff;
+	-moz-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	background: url("../images/NAV_BG.jpg") repeat-x top center;
 }
 
 ul#mainnav li.current a {
-	color: #000;
+	color: #fff;
+	-moz-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	background: url("../images/NAV_BG.jpg") repeat-x top center;
 }
