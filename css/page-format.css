@@ -6,7 +6,7 @@
 }
 
 html, body {
-	background: url("../images/BODY_BG.jpg") repeat-x top center;
+	background: url("../images/BODY_BG.jpg") repeat-x 0px -142px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -29,14 +29,15 @@ html, body, p, td {
 
 #header_wrapper {
 	width: 980px;
-	height: 448px;
+	height: 306px;
 	margin: 0px;
 	padding: 0px;
+	overflow: hidden;
 }
 
 #headerImage {
     position:relative;
-    height:448px;
+    height:359px;
 }
 
 #headerImage IMG {
@@ -56,15 +57,15 @@ html, body, p, td {
 
 #header_content {
 	width: 980px;
-	height: 448px;
+	height: 359px;
 	position: relative;
-	margin: -448px 0px 0px 0px;
+	margin: -359px 0px 0px 0px;
 	padding: 0px;
 	z-index: 11;
 }
 
 #header_top {
-	height: 206px;
+	height: 156px;
 }
 
 #header_top_left {
@@ -101,11 +102,13 @@ html, body, p, td {
 }
 
 #header_bottom {
-	height: 242px;
+	height: 100px;
 }
 
 #book {
-	margin: 100px 0px 0px 20px;
+	position: absolute;
+	top: 200px;
+	left: 20px;
 }
 
 /* CONTENT */
